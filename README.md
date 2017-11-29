@@ -38,7 +38,14 @@ apps:
 1. Make a post requests to http://localhost:3000/generate. Include your params as json in the request body (see below for details).
 2. You will recive response containing email friendly HTML.
 
-Hint: tools like [Postman](https://www.getpostman.com/) are useful for experimenting with requests.
+Hello World using `curl` on the command line:
+
+```
+curl -H "Content-Type: application/json" \
+--data '{"pug":"p Hello World"}' http://localhost:30649/generate`
+```    
+
+Hint: Use something like [Postman](https://www.getpostman.com/) to experiment with requests.
 
 ### Parameters
 
