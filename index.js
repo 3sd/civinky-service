@@ -41,7 +41,7 @@ function prependCss(html, css){
  */
 
 function transform(params){
-  if(!params.pug) throw('Error: Please include some pug')
+  if(!params.pug) throw(new Error('Please include some pug'))
   inky = pugToInky(params.pug, params.json)
   html = inkyToHtml(inky)
   css = baseCss + params.css
